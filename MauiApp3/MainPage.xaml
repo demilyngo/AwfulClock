@@ -1,0 +1,2232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApp3"
+             x:Class="MauiApp3.MainPage"
+             xmlns:mauiApp3="using:MauiApp3"
+             x:DataType="{x:Type local:MainViewModel}">
+<!--    <Style x:Key="setColor" TargetType="Rectangle">
+        <Setter Property="Fill" Value="red">
+    </Style> -->
+
+    <ScrollView>
+        <ScrollView.Resources></ScrollView.Resources>
+        <!--<StackLayout>-->
+            <FlexLayout BackgroundColor="Gray">
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[0]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[1]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+
+
+
+                <StackLayout Spacing="20">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="10"
+                        HeightRequest="10"
+                        RadiusX="50"
+                        RadiusY="50"/>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="10"
+                        HeightRequest="10"
+                        RadiusX="50"
+                        RadiusY="50"/>
+                </StackLayout>
+
+
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[2]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                
+                <StackLayout> <!--4 -->
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[3]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout Spacing="20">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="10"
+                        HeightRequest="10"
+                        RadiusX="50"
+                        RadiusY="50"/>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="10"
+                        HeightRequest="10"
+                        RadiusX="50"
+                        RadiusY="50"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[4]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <StackLayout
+                    Spacing="23">
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="30"
+                        HeightRequest="5"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+
+                <StackLayout>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="2">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                    <Rectangle
+                        Fill="Gray"
+                        WidthRequest="5"
+                        HeightRequest="30"
+                        RadiusX="50"
+                        RadiusY="50">
+                        <Rectangle.Triggers>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="0">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="1">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="3">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="4">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="5">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="6">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="7">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="8">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Rectangle"
+                                         Binding="{Binding time[5]}"
+                                         Value="9">
+                                <Setter Property="Fill"
+                                        Value="Red"/>
+                            </DataTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </StackLayout>
+                <Label Text="{Binding test}"></Label>
+
+                <CollectionView
+                ItemsSource="{Binding time}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding}" Margin="3"/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+        </FlexLayout>
+            
+        <!--</StackLayout>-->
+    </ScrollView>
+</ContentPage>
